@@ -334,7 +334,7 @@ body.menu-expanded button path {
   padding-block: 4rem;
   margin-inline: auto;
 
-  background-color: var(--brand-beige);
+  background-color: var(--bg-light);
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
 
@@ -359,7 +359,7 @@ body.menu-expanded button path {
   line-height: 150%;
 }
 
-/*=== DEVOCIONAL =================================*/
+/*=== FOTOS =================================*/
 #services header h2 {
   margin-bottom: 6rem;
 }
@@ -368,20 +368,44 @@ body.menu-expanded button path {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+  transform: translateY(120px);
+  opacity: 0.3;
+  transition: 2s;
+}
+
+#services .cards:hover {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 #services .card {
   padding: 2.4rem;
   text-align: left;
-
   background: white;
 
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
+
+  position: relative;
+
+  box-shadow: 10px 10px 15px var(--headline);
+  overflow: hidden;
+  backdrop-filter: blur(5px);
 }
 
 #services .card h3 {
   margin-block: 1.6rem;
+}
+
+#services .card a {
+  text-decoration: none;
+  color: var(--bg-light);
+  background-color: var(--primary-color);
+
+  padding: 4px 20px;
+  border-radius: 0.6rem;
+  display: inline-block;
+  margin-top: 15px;
 }
 
 /*=== ABOUT =================================*/
