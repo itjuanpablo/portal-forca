@@ -412,6 +412,28 @@ body.menu-expanded button path {
   height: 1022px;
 }
 
+/*=== DEVOCIONAL =================================*/
+
+.dev {
+  display: flex;
+
+  /* Put a card in the next row when previous cards take all width */
+  flex-wrap: wrap;
+
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.dev-item {
+  background-color: #00a5f1;
+  border-radius: 3px solid;
+  /* There will be 4 cards per row */
+  flex-basis: 25%;
+
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 /*=== ABOUT =================================*/
 #about {
   text-align: left;
