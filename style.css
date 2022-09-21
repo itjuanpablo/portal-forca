@@ -368,9 +368,9 @@ body.menu-expanded button path {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  transform: translateY(120px);
-  opacity: 0.3;
-  transition: 2s;
+  transform: translateY(100px);
+  opacity: 0.5;
+  transition: 1.5s;
 }
 
 #services .cards:hover {
@@ -406,6 +406,10 @@ body.menu-expanded button path {
   border-radius: 0.6rem;
   display: inline-block;
   margin-top: 15px;
+}
+
+#services .card #card-two {
+  height: 1022px;
 }
 
 /*=== ABOUT =================================*/
