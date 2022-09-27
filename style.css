@@ -422,8 +422,7 @@ body.menu-expanded button path {
 
 /*=== PALAVRAS =================================*/
 
-#words .words-layout {
-  display: flex;
+#words .words-layout { 
 
   /* Put a card in the next row when previous cards take all width */
 
@@ -799,8 +798,8 @@ footer a {
   }
 
   #words .words-layout {
-    display: flex;
-  
+    display: flex;  
+    
     /* Put a card in the next row when previous cards take all width */
     
     margin-left: -0.25rem;
@@ -837,7 +836,11 @@ footer a {
     grid-template-areas: 'A B';
   }
 
-   /*=== FOOTER =================================*/
+  #contact h2 {
+   
+  }
+
+  /*=== FOOTER =================================*/
   footer {
     padding-block: 8rem;
   }
