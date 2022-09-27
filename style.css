@@ -376,7 +376,7 @@ body.menu-expanded button path {
 #services .cards:hover {
   transform: translateY(0px);
   opacity: 1;
-  background-color: var(--brand-light);
+  background-color: var(--bg-light);
 }
 
 #services .card {
@@ -424,17 +424,16 @@ body.menu-expanded button path {
   display: flex;
 
   /* Put a card in the next row when previous cards take all width */
-  flex-wrap: wrap;
 
-  margin-top: 6rem;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 6rem;
 }
 
 #words .dev-layout__item {
   /* There will be 3 cards per row */
-  flex-basis: 33.33333%;
+  /*flex-basis: 33.33333%;*/
 
   padding-left: 0.1rem;
   padding-right: 0.1rem;
@@ -445,6 +444,8 @@ body.menu-expanded button path {
 
 #words .dev-layout__item img {
   max-width: 100%;
+  width: 315px;
+  height: 215px;
 }
 
 #words .dev-layout__item h3 {
@@ -549,6 +550,10 @@ footer .social-links {
   justify-content: flex-start;
 }
 
+footer a {
+  text-decoration: none;
+  color: var(--bg-light);
+}
 /* BACK TO TOP */
 #backToTopButton {
   position: fixed;
