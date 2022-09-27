@@ -7,7 +7,7 @@ function onScroll() {
 
   activateMenuAtCurrentSection(home)
   activateMenuAtCurrentSection(services)
-  activateMenuAtCurrentSection(devotionals)
+  activateMenuAtCurrentSection(words)
   activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
 }
