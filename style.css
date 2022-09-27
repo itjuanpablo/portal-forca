@@ -835,12 +835,18 @@ footer a {
     grid-template-columns: 1fr 57.5rem;
     grid-template-areas: 'A B';
   }
+<<<<<<< HEAD
 
   #contact h2 {
    
   }
 
   /*=== FOOTER =================================*/
+=======
+  
+  /*=== FOOTER =================================*/
+
+>>>>>>> d63ac1bc1b80fde19f88da271d81220d1f968642
   footer {
     padding-block: 8rem;
   }
