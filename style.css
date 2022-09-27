@@ -836,8 +836,9 @@ footer a {
     grid-template-columns: 1fr 57.5rem;
     grid-template-areas: 'A B';
   }
+  
+  /*=== FOOTER =================================*/
 
-   /*=== FOOTER =================================*/
   footer {
     padding-block: 8rem;
   }
