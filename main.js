@@ -74,7 +74,7 @@ ScrollReveal({
   #services,
   #services header,
   #services .card
-  #devotionals,
+  #words,
   #about, 
   #about header, 
   #about .content`)

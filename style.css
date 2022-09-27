@@ -376,6 +376,7 @@ body.menu-expanded button path {
 #services .cards:hover {
   transform: translateY(0px);
   opacity: 1;
+  background-color: var(--brand-light);
 }
 
 #services .card {
@@ -408,31 +409,67 @@ body.menu-expanded button path {
   margin-top: 15px;
 }
 
+#services .card a:hover {
+  background-color: var(--brand-dark);
+  transition: 200ms;
+}
+
 #services .card #card-two {
   height: 1022px;
 }
 
-/*=== DEVOCIONAL =================================*/
+/*=== PALAVRAS =================================*/
 
-#devotionals .devotional-layout {
+#words .words-layout {
   display: flex;
 
   /* Put a card in the next row when previous cards take all width */
   flex-wrap: wrap;
 
+  margin-top: 6rem;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
+  /* justify-content: center; */
 }
 
-#devotionals .dev-layout__item {
+#words .dev-layout__item {
   /* There will be 3 cards per row */
   flex-basis: 33.33333%;
 
-  padding-left: 10rem;
-  padding-right: 10rem;
-  background-color: #00a5f1;
-  border-radius: 5px;
-  margin: 10px 10px;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  background-color: var(--headline);
+  border-radius: 4px;
+  margin: 5px 5px;
+}
+
+#words .dev-layout__item img {
+  max-width: 100%;
+}
+
+#words .dev-layout__item h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: var(--paragraph);
+  text-align: center;
+}
+
+#words .dev-layout__item a {
+  text-decoration: none;
+  color: var(--bg-light);
+  background-color: var(--primary-color);
+
+  padding: 4px 20px;
+  border-radius: 0.8rem;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#words a:hover {
+  background-color: var(--brand-dark);
+  transition: 200ms;
 }
 
 /*=== ABOUT =================================*/
@@ -730,7 +767,7 @@ footer .social-links {
     width: 42rem;
   }
 
-  /*=== DEVOCIONAL =================================*/
+  /*=== PALAVRAS =================================*/
   #services h2 {
     width: 47rem;
     margin-inline: auto;
