@@ -376,7 +376,7 @@ body.menu-expanded button path {
 #services .cards:hover {
   transform: translateY(0px);
   opacity: 1;
-  background-color: var(--brand-light);
+  background-color: var(--bg-light);
 }
 
 #services .card {
@@ -424,12 +424,11 @@ body.menu-expanded button path {
   display: flex;
 
   /* Put a card in the next row when previous cards take all width */
-  
+
   margin-left: -0.25rem;
   margin-right: -0.25rem;
   justify-content: space-between;
   margin-top: 6rem;
- 
 }
 
 #words .dev-layout__item {
@@ -547,6 +546,10 @@ footer .social-links {
   justify-content: flex-start;
 }
 
+footer a {
+  text-decoration: none;
+  color: var(--bg-light);
+}
 /* BACK TO TOP */
 #backToTopButton {
   position: fixed;
