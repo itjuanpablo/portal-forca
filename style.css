@@ -837,11 +837,7 @@ footer a {
     grid-template-areas: 'A B';
   }
 
-  #contact h2 {
-   
-  }*/
-
-  /*=== FOOTER =================================*/
+   /*=== FOOTER =================================*/
   footer {
     padding-block: 8rem;
   }
