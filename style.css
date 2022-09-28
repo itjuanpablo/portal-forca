@@ -58,7 +58,7 @@ ul {
 }
 
 img {
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 section {
@@ -127,7 +127,7 @@ section .content p {
 }
 
 .button:hover {
-  background-color: var(--brand-dark);
+  background-color: var(--secondary-color);
 }
 
 .social-links {
@@ -384,7 +384,6 @@ body.menu-expanded button path {
 #services .card {
   padding: 2.4rem;
   text-align: left;
-  background: white;
 
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
@@ -412,7 +411,7 @@ body.menu-expanded button path {
 }
 
 #services .card a:hover {
-  background-color: var(--brand-dark);
+  background-color: var(--secondary-color);
   transition: 200ms;
 }
 
@@ -422,12 +421,11 @@ body.menu-expanded button path {
 
 /*=== PALAVRAS =================================*/
 
-#words .words-layout { 
-
+#words .words-layout {
   /* Put a card in the next row when previous cards take all width */
 
   margin-left: -0.25rem;
-  margin-right: -0.25rem;  
+  margin-right: -0.25rem;
   margin-top: 6rem;
 }
 
@@ -438,12 +436,15 @@ body.menu-expanded button path {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 6rem auto ;
+  margin: 6rem auto;
 
   padding-left: 0.1rem;
   padding-right: 0.1rem;
   background-color: var(--headline);
-  border-radius: 4px;   
+  border-radius: 4px;
+
+  backdrop-filter: blur(5px);
+  box-shadow: 10px 10px 15px var(--headline);
 }
 
 #words .dev-layout__item img {
@@ -473,8 +474,22 @@ body.menu-expanded button path {
 }
 
 #words a:hover {
-  background-color: var(--brand-dark);
+  background-color: var(--secondary-color);
   transition: 200ms;
+}
+
+.button-words .button {
+  background-color: none;
+  display: inline-block;
+  padding: auto;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.button-words .button a {
+  color: var(--bg-light);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 /*=== ABOUT =================================*/
@@ -640,6 +655,7 @@ footer a {
   nav#navigation .menu ul:nth-child(1) {
     display: flex;
     gap: 3.2rem;
+    margin-bottom: 10px;
   }
 
   nav#navigation .menu ul li a {
@@ -681,7 +697,7 @@ footer a {
   }
 
   nav#navigation .menu li a {
-    transition: opacity 0.4s;
+    transition: opacity 1s;
   }
 
   nav#navigation .menu li a.active,
@@ -798,66 +814,64 @@ footer a {
   }
 
   #words .words-layout {
-    display: flex;  
-    
+    display: flex;
+
     /* Put a card in the next row when previous cards take all width */
-    
+
     margin-left: -0.25rem;
     margin-right: -0.25rem;
     justify-content: space-between;
-    margin-top: 6rem;  
+    margin-top: 6rem;
   }
 
-  #words .dev-layout__item{
+  #words .dev-layout__item {
     margin: 5px 5px;
   }
+}
 
-  }
+/*=== ABOUT =================================*/
+#about .wrapper {
+  grid-template-columns: 48rem 1fr;
+  grid-template-areas: 'B A';
+  gap: 6.7rem;
+}
 
-  /*=== ABOUT =================================*/
-  #about .wrapper {
-    grid-template-columns: 48rem 1fr;
-    grid-template-areas: 'B A';
-    gap: 6.7rem;
-  }
+#about .col-a {
+  align-self: center;
+}
 
-  #about .col-a {
-    align-self: center;
-  }
+#about .content p {
+  margin-bottom: 0;
+}
 
-  #about .content p {
-    margin-bottom: 0;
-  }
+/*=== CONTACT =================================*/
 
-  /*=== CONTACT =================================*/
+#contact .wrapper {
+  grid-template-columns: 1fr 57.5rem;
+  grid-template-areas: 'A B';
+}
 
-  #contact .wrapper {
-    grid-template-columns: 1fr 57.5rem;
-    grid-template-areas: 'A B';
-  }
-  
-  /*=== FOOTER =================================*/
+/*=== FOOTER =================================*/
 
-  footer {
-    padding-block: 8rem;
-  }
+footer {
+  padding-block: 8rem;
+}
 
-  footer .wrapper {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'A B';
-  }
+footer .wrapper {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'A B';
+}
 
-  footer .col-a {
-    align-self: center;
-  }
+footer .col-a {
+  align-self: center;
+}
 
-  footer .col-b {
-    align-self: center;
-    justify-self: flex-end;
-  }
+footer .col-b {
+  align-self: center;
+  justify-self: flex-end;
+}
 
-  footer p {
-    margin-bottom: 0;
-    color: var(--primary-color);
-  }
-
+footer p {
+  margin-bottom: 0;
+  color: var(--primary-color);
+}
