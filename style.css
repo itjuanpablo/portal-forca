@@ -531,82 +531,81 @@ body.menu-expanded button path {
   gap: 0.8rem;
 }
 
-/*=== SLIDER =================================*/
-#about .col-b {
-  height: 520px;
-  width: 500px;
+/*=== SLIDES =================================*/
 
-  overflow: hidden;
+.content-col-b {
+  height: 320px;
+  width: 535px;
   border-radius: 20px;
+  overflow: hidden;
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 495%;
-  left: 30%;
-  right: 10%;
+  top: 460%;
+  left: 10%;
+  transition: translate(-50%, -50%);
 }
 
-.navigations-slides {
+.navigations {
   position: absolute;
-  bottom: 10px;
-  left: 20%;
+  bottom: 20px;
+  left: 50%;
   transform: translate(-50%);
   display: flex;
 }
 
-/* .bar {
-  width: 15px;
+.bar {
+  width: 70px;
   height: 17px;
-  border: 2px solid black;
+  border: 2px solid white;
+  margin: 6px;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.6s;
+  transition: 0.4s;
 }
 
 .bar:hover {
-  background-color: var(--brand-light);
-} */
+  background-color: white;
+}
 
-
-/* li {
+input {
   display: none;
-} */
+}
 
-.slider {
+.slides {
   display: flex;
   width: 500%;
   height: 100%;
-  margin-top: 40px;
 }
 
 .slide {
-  width: 90%;
+  width: 20%;
   transition: 0.6s;
 }
 
-/* .slide img {
+.slide img {
   width: 100%;
-  height: 90%;
-} */
+  height: 100%;
+}
 
 #slide1:checked ~ .s1 {
   margin-left: 0;
 }
 
-#slide2:checked ~ s1 {
+#slide2:checked ~ .s1 {
   margin-left: -20%;
 }
 
-#slide3:checked ~ s1 {
+#slide3:checked ~ .s1 {
   margin-left: -40%;
 }
 
-#slide4:checked ~ s1 {
+#slide4:checked ~ .s1 {
   margin-left: -60%;
 }
 
-#slide5:checked ~ s1 {
+#slide5:checked ~ .s1 {
   margin-left: -80%;
 }
+
 /*=== FOOTER =================================*/
 footer {
   background-color: var(--secondary-color);
@@ -686,6 +685,12 @@ footer a {
   }
 
   .col-b {
+    grid-area: B;
+  }
+
+  .content-col-b,
+  .slides,
+  .slide {
     grid-area: B;
   }
 
@@ -892,7 +897,6 @@ footer a {
 
   #words .words-layout {
     display: flex;
-
     /* Put a card in the next row when previous cards take all width */
 
     margin-left: -0.25rem;
@@ -920,6 +924,8 @@ footer a {
 #about .content p {
   margin-bottom: 0;
 }
+
+/* ====== SLIDES =========== */
 
 /*=== CONTACT =================================*/
 
