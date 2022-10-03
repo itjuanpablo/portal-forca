@@ -534,21 +534,19 @@ body.menu-expanded button path {
 /*=== SLIDES =================================*/
 
 .content-col-b {
-  height: 320px;
-  width: 535px;
   border-radius: 20px;
   overflow: hidden;
-  position: absolute;
+  /*position: absolute;*/
   top: 460%;
   left: 10%;
   transition: translate(-50%, -50%);
 }
 
 .navigations {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%);
+  /*position: absolute;*/
+  /*bottom: 20px;*/
+  /*left: 50%;*/
+  /*transform: translate(-50%);*/
   display: flex;
 }
 
@@ -686,6 +684,22 @@ footer a {
 
   .col-b {
     grid-area: B;
+  }
+
+  .content-col-b{
+    height: 320px;
+    width: 535px;
+    border-radius: 20px;
+    overflow: hidden;
+    /*position: absolute;*/
+    top: 460%;
+    left: 10%;
+    transition: translate(-50%, -50%);
+  }
+
+  .navigations{   
+    display: flex;
+    position: absolute;
   }
 
   .content-col-b,
