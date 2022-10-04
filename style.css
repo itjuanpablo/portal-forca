@@ -570,7 +570,7 @@ input {
 
 .slides {
   display: flex;
-  width: 600%;
+  width: 500%;
   height: 100%;
 }
 
@@ -602,10 +602,6 @@ input {
 
 #slide5:checked ~ .s1 {
   margin-left: -80%;
-}
-
-#slide6:checked ~ .s1 {
-  margin-left: -100%;
 }
 
 /*=== FOOTER =================================*/
@@ -690,7 +686,7 @@ footer a {
     grid-area: B;
   }
 
-  .content-col-b{
+  .content-col-b {
     height: 320px;
     width: 535px;
     border-radius: 20px;
@@ -701,7 +697,7 @@ footer a {
     transition: translate(-50%, -50%);
   }
 
-  .navigations{   
+  .navigations {
     display: flex;
     position: absolute;
   }
